@@ -13,9 +13,10 @@
     <script>
         console.log(this); // é window
 
-        let exibeConteudo = () =>
+        let exibeConteudo = function() {
             console.log(this);
             alert(this.textContent);
+        };
 
         $ = document.querySelector.bind(document);
 
